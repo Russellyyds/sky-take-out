@@ -39,7 +39,7 @@
         where id = #{id}
     </update>
 
-    <select id="list" resultType="Category" parameterType="java.lang.Integer">
+    <select id="list" resultType="com.sky.entity.Category" parameterType="java.lang.Integer">
         select * from category
         where status = 1
         <if test="type != null">
