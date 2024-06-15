@@ -61,6 +61,7 @@ public class EmployeeController {
                 .name(employee.getName())
                 .token(token)
                 .build();
+        log.info("user token is :{}",employeeLoginVO);
 
         return Result.success(employeeLoginVO);
     }
